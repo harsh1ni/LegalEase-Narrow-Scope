@@ -24,7 +24,7 @@ var completionInstructions = Text("Completion Instructions",
         textStyle: const TextStyle(
             fontSize: 16, fontWeight: FontWeight.normal, color: black)));
 
-//Spanish welcome text 
+//Spanish welcome text
 var spanWelcomeText = Text(
     "¡Bienvenido a LegalEase! Selecciona el botón para ver una guía de instrucciones relacionadas con el Formulario de Seguro Social.",
     textAlign: TextAlign.center,
@@ -130,7 +130,7 @@ var socialSecurityText = Text("Social Security Form",
         textStyle: const TextStyle(
             fontSize: 15, fontWeight: FontWeight.normal, color: darkGrey)));
 
-//Spanish Social Security Form button 
+//Spanish Social Security Form button
 var spanSocialSecurityText = Text("Formulario del Seguro Social",
     style: GoogleFonts.martel(
         textStyle: const TextStyle(
@@ -512,3 +512,6 @@ var spanq10a = Text(
     style: GoogleFonts.montserrat(
         textStyle: const TextStyle(
             fontSize: 10, fontWeight: FontWeight.normal, color: black)));
+
+var spanish;
+var test;

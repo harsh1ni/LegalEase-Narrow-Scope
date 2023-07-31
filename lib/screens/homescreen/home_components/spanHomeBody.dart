@@ -37,7 +37,7 @@ class spanHomeBody extends StatelessWidget {
               children: [
                 const SizedBox(height: 20),
                 spanWelcomeText,
-                const SizedBox(height: 30),
+                const SizedBox(height: 31),
                 const spanSocialSecurityForm(),
               ],
             ),
