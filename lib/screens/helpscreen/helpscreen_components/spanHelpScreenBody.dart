@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/helpscreen/helpscreen.dart';
-import 'package:flutter_application_1/screens/helpscreen/spanHelpScreen.dart';
-import 'package:flutter_application_1/screens/ssn16/spanSsn16.dart';
-import 'package:flutter_application_1/screens/ssn812/ssn812.dart';
 import 'package:flutter_application_1/utils/constants/colors.dart';
 import 'package:flutter_application_1/utils/constants/styles.dart';
 import 'package:flutter_application_1/utils/themes/button_dart.dart';
@@ -40,45 +37,45 @@ class spanHelpScreenBody extends StatelessWidget {
                 //SizedBox(height: 1),
                 // Adjust as needed
                 spanFaqs,
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 spanQ1,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanQ1a,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanQ2,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanQ2a,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanQ3,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanQ3a,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq4,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq4a,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq5,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq5a,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq6,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq6a,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq7,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq7a,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq8,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq8a,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq9,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq9a,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq10,
-                SizedBox(height: 3),
+                const SizedBox(height: 3),
                 spanq10a,
               ],
             ),
@@ -90,13 +87,6 @@ class spanHelpScreenBody extends StatelessWidget {
               child: CustomBackButton(),
             ),
           ),
-          // const Align(
-          //   alignment: Alignment.topRight,
-          //   child: Padding(
-          //     padding: EdgeInsets.only(top: 40.0, right: 30.0),
-          //     child: HelpButton(),
-          //   ),
-          // ),
           Align(
             alignment: Alignment.topRight,
             child: Padding(
@@ -123,4 +113,3 @@ class spanHelpScreenBody extends StatelessWidget {
     );
   }
 }
-//hi
