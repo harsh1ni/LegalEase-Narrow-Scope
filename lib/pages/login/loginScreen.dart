@@ -117,10 +117,9 @@ class LoginScreen extends StatelessWidget {
 
               //Enter Password button
               // Implement your Enter Password button widget here
-
+var spanish;
               //Sign in using text
               // Implement your Sign in using text widget here
-
               //Row: Google and Guest
               // Implement your Row: Google and Guest widget here
               Row(
