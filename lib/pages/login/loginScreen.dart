@@ -6,87 +6,63 @@ import 'package:flutter_application_1/utils/constants/styles.dart';
 import 'package:flutter_application_1/utils/themes/button_dart.dart';
 
 class LoginScreen extends StatelessWidget {
-  LoginScreen({super.key});
+  LoginScreen({Key? key}) : super(key: key);
 
-  // text editing controllers
-  final usernameController = TextEditingController();
+  final emailAddressController = TextEditingController();
   final passwordController = TextEditingController();
-
-  // sign user in method
-  void signUserIn() {}
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
       body: SafeArea(
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(height: 50),
+              //Spacing
+              SizedBox(height: 10),
+              //Logo
+              Image.asset(
+                'assets/images/logo2.png',
+                height: 200, // Adjust the height of the image
+                fit: BoxFit.contain, // Adjust the fit of the image
+              ),
+              //Spacing
+              SizedBox(height: 20),
+              //Welcome text
+              loginWelcome,
 
-              // logo
-              const Icon(
-                Icons.lock,
-                size: 100,
+              //Spacing
+              SizedBox(height: 30),
+              //Login header text
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  login,
+                ],
               ),
 
-              const SizedBox(height: 50),
+              //Spacing
+              SizedBox(height: 20),
+              //Enter Email Address here button
 
-              // welcome back, you've been missed!
-              Text(
-                'Welcome back you\'ve been missed!',
-                style: TextStyle(
-                  color: Colors.grey[700],
-                  fontSize: 16,
-                ),
-              ),
-
-              const SizedBox(height: 25),
-
-              // username textfield
               MyTextField(
-                controller: usernameController,
-                hintText: 'Username',
+                controller: emailAddressController,
+                hintText: "Enter Email Address",
                 obscureText: false,
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 20),
 
-              // password textfield
               MyTextField(
                 controller: passwordController,
-                hintText: 'Password',
+                hintText: "Enter Password",
                 obscureText: true,
               ),
 
-              const SizedBox(height: 10),
-
-              // forgot password?
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Text(
-                      'Forgot Password?',
-                      style: TextStyle(color: Colors.grey[600]),
-                    ),
-                  ],
-                ),
-              ),
-
-              const SizedBox(height: 25),
-
-              // sign in button
-              MyButton(
-                onTap: signUserIn,
-              ),
-
-              const SizedBox(height: 50),
-
-              // or continue with
+              //needs a login button here
+              SizedBox(height: 20),
+              loginButton(),
+              SizedBox(height: 15),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Row(
@@ -114,25 +90,39 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 50),
+              const SizedBox(height: 30),
 
               // google + apple sign in buttons
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   // google button
-                  SquareTile(imagePath: 'lib/images/google.png'),
+                  SquareTile(imagePath: 'assets/icons/googleicon.png'),
 
                   SizedBox(width: 25),
 
                   // apple button
-                  SquareTile(imagePath: 'lib/images/apple.png')
+                  SquareTile(imagePath: 'assets/icons/guesticon.png')
                 ],
               ),
+              Sizedbox(height: 15),
+              //log   SiizedBoin welcome text
+              // Implement your login welcome text widget here
 
-              const SizedBox(height: 50),
+              //login header
+              // Implement your login header widget here
 
-              // not a member? register now
+              //Enter email address button
+              // Implement your Enter email address button widget here
+
+              //Enter Password button
+              // Implement your Enter Password button widget here
+
+              //Sign in using text
+              // Implement your Sign in using text widget here
+
+              //Row: Google and Guest
+              // Implement your Row: Google and Guest widget here
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -149,7 +139,9 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ],
-              )
+              ),
+              //Don't have an account? Register now.
+              // Implement your Don't have an account? Register now. widget here
             ],
           ),
         ),

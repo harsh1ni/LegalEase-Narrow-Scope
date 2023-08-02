@@ -526,7 +526,7 @@ var loginWelcome = Text(
 
 //Login text
 var login = Text("Login",
-    textAlign: TextAlign.left,
+   // textAlign: TextAlign.left,
     style: GoogleFonts.montserrat(
         textStyle: const TextStyle(
             fontSize: 20, fontWeight: FontWeight.normal, color: black)));
