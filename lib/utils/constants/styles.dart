@@ -513,5 +513,75 @@ var spanq10a = Text(
         textStyle: const TextStyle(
             fontSize: 10, fontWeight: FontWeight.normal, color: black)));
 
-var spanish;
-var test;
+//Widescope Auth. Texts
+//Login Page styles
+
+//Login welcome text
+var loginWelcome = Text(
+    "LegalEase is a mobile app dedicated to assisting spanish speaking ESL learners complete the Social Security form through an interactive guide.",
+    textAlign: TextAlign.center,
+    style: GoogleFonts.montserrat(
+        textStyle: const TextStyle(
+            fontSize: 16, fontWeight: FontWeight.normal, color: black)));
+
+//Login text
+var login = Text("Login",
+    textAlign: TextAlign.left,
+    style: GoogleFonts.montserrat(
+        textStyle: const TextStyle(
+            fontSize: 20, fontWeight: FontWeight.normal, color: black)));
+
+//Login Buttons
+//Enter email ID text button
+var enterEmailIDText = Text("Enter Email Address",
+    style: GoogleFonts.martel(
+        textStyle: const TextStyle(
+            fontSize: 15, fontWeight: FontWeight.normal, color: darkGrey)));
+
+//Enter password text button
+var enterPasswordText = Text("Enter Password",
+    style: GoogleFonts.martel(
+        textStyle: const TextStyle(
+            fontSize: 15, fontWeight: FontWeight.normal, color: darkGrey)));
+
+//Sign in Using text (make it a clickable text button)
+var signinUsingText = Text("Sign in Using",
+    textAlign: TextAlign.center,
+    style: GoogleFonts.montserrat(
+        textStyle: const TextStyle(
+            fontSize: 12, fontWeight: FontWeight.normal, color: lightGrey)));
+
+//Google caption
+var googleText = Text("Google",
+    textAlign: TextAlign.center,
+    style: GoogleFonts.montserrat(
+        textStyle: const TextStyle(
+            fontSize: 12, fontWeight: FontWeight.normal, color: lightGrey)));
+
+//Guest caption
+var guestText = Text("Guest",
+    textAlign: TextAlign.center,
+    style: GoogleFonts.montserrat(
+        textStyle: const TextStyle(
+            fontSize: 12, fontWeight: FontWeight.normal, color: lightGrey)));
+
+//Sign Up Frame
+//Login text
+var createAccountText = Text("Create Account",
+    textAlign: TextAlign.left,
+    style: GoogleFonts.montserrat(
+        textStyle: const TextStyle(
+            fontSize: 20, fontWeight: FontWeight.normal, color: black)));
+
+//Enter Full Name text
+var enterFullNameText = Text("Enter Full Name",
+    style: GoogleFonts.martel(
+        textStyle: const TextStyle(
+            fontSize: 15, fontWeight: FontWeight.normal, color: darkGrey)));
+
+//Already have an account clickable button
+var alreadyHaveAnAccountText = Text("Already have an account? Log in",
+    textAlign: TextAlign.center,
+    style: GoogleFonts.montserrat(
+        textStyle: const TextStyle(
+            fontSize: 12, fontWeight: FontWeight.normal, color: lightGrey)));
